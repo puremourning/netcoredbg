@@ -1,0 +1,15 @@
+{
+  "$schema": "https://puremourning.github.io/vimspector/schema/vimspector.schema.json",
+  "configurations": {
+    "run": {
+      "adapter": "CodeLLDB",
+      "configuration": {
+        "request": "launch",
+        "program": "${workspaceRoot}/bin/netcoredbg",
+        "args": [ "--interpreter=vscode" ],
+        "stopOnEntry": true,
+        "stopAtEntry": true
+      }
+    }
+  }
+}
